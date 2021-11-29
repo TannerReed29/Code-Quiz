@@ -11,27 +11,60 @@
     <header>
         <h1>Code Quiz</h1>
     </header>
-    
-    <div id="time"></div>
+    <div class="content">
 
-    <div id="buttons">
-        <div class="start">
+        
+        <div id="start">
             <button id="start-btn" class="btn">Start Quiz</button>
-        </div>
-        <div class="scores">
             <button id="score-btn" class="btn">Highscores</button>
         </div>
+        
+        
+        
+        
+        
+        <div id="quiz-body">
+            <div id="timer">Time Remaining: </div>
+            <div id="question">
+                <p>QUESTION GOES HERE</p>
+            </div>
+            <button id="a" onclick="checkanswer('a')">A</button>
+            <button id="b" onclick="checkanswer('b')">B</button>
+            <button id="c" onclick="checkanswer('c')">C</button>
+            <button id="d" onclick="checkanswer('d')">D</button>
+            <div id="answer">im the answer</div>
+        </div>
+        
+        
+        
+        <div id="endgame">
+            
+            <div id="finalscore"></div>
+            <input type="text" size="35" name="initials" id="initials" placeholder="Enter Your Initials" />
+            <button id="submit-score">Submit Score</button>
+            
+            <div id=score-content>
+                <div id="scorePage">
+                    <div id="score-header">
+                        <h3>Player Initials</h3>
+                        <h3>Score</h3>
+                    </div>
+                    <div id = "score-initials"></div>
+                    <div id = "highscores"></div>
+                </div>
+                <div id="replaybtns">
+                    <button id="playagain" onclick="retryQuiz()">Play Again</button>
+                    <button id="clearscores" onclick="clearScore()">Clear Highscores</button>
+                </div>
+            </div>
+        </div>
     </div>
+        
+
+   
     
-
-
-
-
-    <div id="quiz-body" class="hidden">
-        <div id="question">im the question</div>
-        <div id="answers">im the answers</div>
-    </div>
-
+        
+        
 
 
 
