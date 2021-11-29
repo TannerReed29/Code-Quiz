@@ -21,18 +21,16 @@
         
         
         
-        
-        
         <div id="quiz-body">
             <div id="timer">Time Remaining: </div>
             <div id="question">
-                <p>QUESTION GOES HERE</p>
+                <p></p>
             </div>
-            <button id="a" onclick="checkanswer('a')">A</button>
-            <button id="b" onclick="checkanswer('b')">B</button>
-            <button id="c" onclick="checkanswer('c')">C</button>
-            <button id="d" onclick="checkanswer('d')">D</button>
-            <div id="answer">im the answer</div>
+            <button id="a" onclick="answerCheck('a')">A</button>
+            <button id="b" onclick="answerCheck('b')">B</button>
+            <button id="c" onclick="answerCheck('c')">C</button>
+            <button id="d" onclick="answerCheck('d')">D</button>
+            <div id="answer"></div>
         </div>
         
         
@@ -53,31 +51,15 @@
                     <div id = "highscores"></div>
                 </div>
                 <div id="replaybtns">
-                    <button id="playagain" onclick="retryQuiz()">Play Again</button>
-                    <button id="clearscores" onclick="clearScore()">Clear Highscores</button>
+                    <button id="playagain" onclick="replay()">Play Again</button>
+                    <button id="clearscores" onclick="clear()">Clear Highscores</button>
                 </div>
             </div>
         </div>
     </div>
         
 
-   
-    
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="assets/js/questions.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
